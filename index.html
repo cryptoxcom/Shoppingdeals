@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Today's Shopping Deals - Save Big</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#f4f6fb;
+color:#222;
+}
+
+header{
+text-align:center;
+padding:35px 20px;
+background:white;
+box-shadow:0 2px 12px rgba(0,0,0,0.08);
+}
+
+header h1{
+font-size:28px;
+margin:0;
+}
+
+header p{
+color:#666;
+margin-top:8px;
+}
+
+.save{
+color:#ff5a1f;
+font-weight:bold;
+}
+
+.counter{
+background:#fff3e8;
+padding:10px;
+margin-top:10px;
+font-weight:bold;
+color:#ff5a1f;
+border-radius:8px;
+display:inline-block;
+}
+
+.timer{
+margin-top:10px;
+font-size:14px;
+color:#ff3d00;
+font-weight:bold;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:20px;
+}
+
+.carousel{
+display:flex;
+gap:20px;
+overflow:hidden;
+}
+
+.card{
+min-width:260px;
+background:white;
+border-radius:14px;
+box-shadow:0 8px 20px rgba(0,0,0,0.1);
+padding:15px;
+text-align:center;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+}
+
+.card img{
+width:100%;
+border-radius:10px;
+}
+
+.card h3{
+margin:10px 0;
+}
+
+.btn{
+display:inline-block;
+margin-top:8px;
+padding:12px 18px;
+background:#ff5a1f;
+color:white;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#e04814;
+}
+
+.section{
+text-align:center;
+padding:40px 20px;
+}
+
+.steps{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
+}
+
+.step{
+max-width:200px;
+}
+
+.badges{
+margin-top:30px;
+font-size:14px;
+color:#666;
+}
+
+footer{
+text-align:center;
+padding:25px;
+color:#777;
+font-size:14px;
+}
+
+@media(max-width:700px){
+
+.carousel{
+overflow-x:auto;
+}
+
+.card{
+min-width:220px;
+}
+
+header h1{
+font-size:22px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<h1>🛍️ Today's Shopping Deals</h1>
+
+<p>Unlock exclusive offers and <span class="save">save up to $500 on shopping today</span></p>
+
+<div class="counter">
+🔥 <span id="viewers"></span> shoppers viewing deals now
+</div>
+
+<div class="timer">
+⏳ Today's deals expire in <span id="countdown"></span>
+</div>
+
+</header>
+
+
+<div class="container">
+
+<div class="carousel" id="carousel">
+
+<div class="card">
+<img src="https://i.ibb.co/NdsKqr5Q/amazon-gift-card-100-usd.jpg">
+<h3>Amazon $100 Deal</h3>
+<a class="btn" href="https://confirmapp.store/cl/i/veeomg">Get Today's Deal</a>
+</div>
+
+<div class="card">
+<img src="https://i.ibb.co/GZgcF4n/Walmart-200-Gift-Card.jpg">
+<h3>Walmart $200 Deal</h3>
+<a class="btn" href="https://confirmapp.store/cl/i/veeomg">Get Today's Deal</a>
+</div>
+
+<div class="card">
+<img src="https://i.ibb.co/bG5x7k4/0000000812741.webp">
+<h3>Target $100 Deal</h3>
+<a class="btn" href="https://confirmapp.store/cl/i/veeomg">Get Today's Deal</a>
+</div>
+
+<div class="card">
+<img src="https://i.ibb.co/4QvnG26/OIP.webp">
+<h3>Nike $50 Deal</h3>
+<a class="btn" href="https://confirmapp.store/cl/i/veeomg">Get Today's Deal</a>
+</div>
+
+<div class="card">
+<img src="https://i.ibb.co/1f54ckJC/Starbucks-25-Gift-Card-676eb541-09cc-42d6-9c17-9abd94daa574-939caf08f74a37f1ab407f3053aeb340.webp">
+<h3>Starbucks $25 Deal</h3>
+<a class="btn" href="https://confirmapp.store/cl/i/veeomg">Get Today's Deal</a>
+</div>
+
+<div class="card">
+<img src="https://i.ibb.co/9mWnMbBZ/OIP-1.webp">
+<h3>Apple $100 Deal</h3>
+<a class="btn" href="https://confirmapp.store/cl/i/veeomg">Get Today's Deal</a>
+</div>
+
+<div class="card">
+<img src="https://i.ibb.co/N2YFr9jk/OIP-2.webp">
+<h3>PlayStation $50 Deal</h3>
+<a class="btn" href="https://confirmapp.store/cl/i/veeomg">Get Today's Deal</a>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>How To Save On Shopping</h2>
+
+<div class="steps">
+
+<div class="step">
+<h3>🛒 Browse Deals</h3>
+<p>Find today’s best shopping discounts.</p>
+</div>
+
+<div class="step">
+<h3>🎁 Unlock Offer</h3>
+<p>Access limited time gift card deals.</p>
+</div>
+
+<div class="step">
+<h3>💰 Save Instantly</h3>
+<p>Apply the deal during checkout.</p>
+</div>
+
+</div>
+
+<div class="badges">
+
+✔ Secure Deals  
+✔ Daily Updated Offers  
+✔ Trusted by 50k+ Shoppers  
+
+</div>
+
+</div>
+
+
+<footer>
+
+© 2026 Shopping Deals • Daily Updated Offers
+
+</footer>
+
+
+<script>
+
+let viewers = document.getElementById("viewers")
+
+function randomViewers(){
+viewers.innerText = Math.floor(Math.random()*200)+120
+}
+
+setInterval(randomViewers,3000)
+randomViewers()
+
+
+
+let countdown = document.getElementById("countdown")
+
+let end = new Date()
+end.setHours(23,59,59)
+
+function updateTimer(){
+
+let now = new Date().getTime()
+let distance = end - now
+
+let h = Math.floor((distance%(1000*60*60*24))/(1000*60*60))
+let m = Math.floor((distance%(1000*60*60))/(1000*60))
+let s = Math.floor((distance%(1000*60))/1000)
+
+countdown.innerHTML = h+"h "+m+"m "+s+"s"
+
+}
+
+setInterval(updateTimer,1000)
+
+
+
+let carousel = document.getElementById("carousel")
+
+setInterval(()=>{
+carousel.scrollBy({left:280,behavior:"smooth"})
+},3000)
+
+</script>
+
+
+</body>
+</html>
